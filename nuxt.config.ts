@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     '@nuxt/fonts'
   ],
   routeRules: {
-    '/': { prerender: true }
+    '/': { prerender: true },
+    '/blog/**': { prerender: true } // Bisa ditambahkan untuk halaman lain
   }
   
 ,
@@ -24,6 +25,11 @@ export default defineNuxtConfig({
   
 
   content: {
+
+    database:{
+      type:'d1',
+      binding:'DB'
+    },
 
     build: {
       markdown: {
