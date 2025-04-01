@@ -1,7 +1,7 @@
 <script setup>
 const route = useRoute()
 const { data: post } = await useAsyncData(route.path, () => {
-  return queryCollection('blog').path(route.path).first()
+  return queryCollection('DB').path(route.path).first()
 })
 
 
