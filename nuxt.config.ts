@@ -10,6 +10,10 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/fonts'
   ],
+
+  nitro:{
+    preset: 'cloudflare_pages',
+  },
   
 
   css: ['~/assets/css/main.css', '~/assets/css/global.css'],
