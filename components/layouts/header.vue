@@ -40,7 +40,7 @@ const isBlogOrPostPage = computed(() => {
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="text-xl font-bold ">
-          <NuxtLink to="/">My Blog</NuxtLink>
+          <NuxtLink to="/">Mitra Gali Boringan</NuxtLink>
         </div>
 
         <!-- ColorModButton (Conditionally Rendered) -->

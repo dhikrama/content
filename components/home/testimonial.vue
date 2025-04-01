@@ -30,7 +30,7 @@
             </div>
             <div class="mb-4">
               <UIcon
-                name="i-heroicons-quote-left"
+                name="i-fa-solid-quote-left"
                 class="w-6 h-6 text-gray-400"
               />
             </div>

@@ -4,11 +4,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
+    '@nuxtjs/sitemap',
     '@nuxt/content',
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxt/icon',
-    '@nuxt/fonts'
+    '@nuxt/fonts',
   ],
   routeRules: {
     '/': { prerender: true },
@@ -18,6 +19,9 @@ export default defineNuxtConfig({
 ,
   nitro:{
     preset: 'cloudflare_pages',
+    prerender:{
+      routes:['/','/blog/**','/sitemap.xml']
+    }
   },
   
 
