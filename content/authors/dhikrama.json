@@ -1,0 +1,10 @@
+{
+  "name": "Dhikrama",
+  "image": "/images/author/dhikrama.jpg",
+  "bio": "Fullstack Developer",
+  "social": {
+    "github": "https://github.com/dhikrama",
+    "linkedin": "https://www.linkedin.com/in/dhikrama/",
+    "twitter": "https://twitter.com/dhikrama_"
+  }
+}
