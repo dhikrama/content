@@ -20,7 +20,6 @@ export default defineNuxtConfig({
 
   vite: {
     build: {
-      minify: 'terser',
       terserOptions: {
         compress: {
           drop_console: true // Hapus console.log
@@ -40,19 +39,15 @@ export default defineNuxtConfig({
 
   nitro:{
     preset: 'cloudflare_pages',
-    routeRules:{
-      '/**': { cache: { maxAge: 86400 } } // Cache selama 1 hari
-    },
     prerender:{
-      crawlLinks: true,
-      routes:['/','/blog/**','/sitemap.xml', '/contact', '/about']
+      crawlLinks: true
+      routes:['/','/blog/**','/sitemap.xml']
     }
   },
   
 
   css: ['~/assets/css/main.css', '~/assets/css/global.css'],
   
-  ssr: true,
 
   content: {
 
