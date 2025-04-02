@@ -1,7 +1,17 @@
+
+
 <template>
   <UApp>
-    <LayoutsHeader class="z-10"/>
-    <NuxtPage class="z-0"/>
+    <LayoutsHeader />
+    <Suspense>
+      <template #default>
+        <LazyNuxtPage />
+      </template>
+      <template #fallback>
+        <div class="text-center">Loading...</div>
+      </template>
+    </Suspense>
     <LayoutsFooter />
   </UApp>
 </template>
+

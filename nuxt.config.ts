@@ -1,3 +1,5 @@
+import { tree } from "#build/ui";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
@@ -14,9 +16,28 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { prerender: true },
     '/blog/**': { prerender: true } // Bisa ditambahkan untuk halaman lain
-  }
-  
-,
+  },
+
+  vite: {
+    build: {
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true // Hapus console.log
+        }
+      }
+    }
+  },
+
+  app: {
+    head: {
+      link: [
+        { rel: 'prefetch', href: '/nuxt/entry.js' } // Hanya unduh saat butuh
+      ]
+    }
+  },
+
+
   nitro:{
     preset: 'cloudflare_pages',
     prerender:{
@@ -36,6 +57,7 @@ export default defineNuxtConfig({
     },
 
     build: {
+
       markdown: {
         highlight: {
           theme: {
