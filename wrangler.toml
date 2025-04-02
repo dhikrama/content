@@ -1,0 +1,6 @@
+name = "boringan"
+type = "javascript"
+
+[site]
+bucket = "./.output/public"
+entry-point = "./.output/server"
