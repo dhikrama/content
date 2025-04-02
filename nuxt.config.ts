@@ -44,7 +44,8 @@ export default defineNuxtConfig({
       '/**': { cache: { maxAge: 86400 } } // Cache selama 1 hari
     },
     prerender:{
-      routes:['/','/blog/**','/sitemap.xml']
+      crawlLinks: true,
+      routes:['/','/blog/**','/sitemap.xml', '/contact', '/about']
     }
   },
   
