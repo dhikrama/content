@@ -8,14 +8,9 @@ useHead({
   title: page.value?.title,
   meta: [
     { name: 'description', content: page.value?.description }
-  ],
-  bodyAttrs: {
-    class: 'test'
-  },
-  script: [ { innerHTML: 'console.log(\'Hello world\')' } ]
+  ]
 })
 
-console.log(page.value?.description)
 </script>
 
 <template>
