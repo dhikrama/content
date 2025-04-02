@@ -40,6 +40,9 @@ export default defineNuxtConfig({
 
   nitro:{
     preset: 'cloudflare_pages',
+    routeRules:{
+      '/**': { cache: { maxAge: 86400 } } // Cache selama 1 hari
+    },
     prerender:{
       routes:['/','/blog/**','/sitemap.xml']
     }
