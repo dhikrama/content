@@ -9,7 +9,6 @@ const { data: post } = await useAsyncData(route.path, () => {
 const { data: authors } = await useAsyncData("authors", () => {
   return queryCollection("authors").order("name", "DESC").all();
 });
-console.log(post.value.meta);
 
 useSeoMeta({
   title: post.value?.title,
@@ -21,7 +20,6 @@ const getAuthorOfPost = computed(() => {
   if (!post.value.meta || !authors.value || !post.value.meta?.author) return null;
 
   const authorId = String(post.value.meta.author); // ID dari post
-  console.log("Author ID from post:", authorId);
 
   return authors.value.find((author) => {
     // Ekstrak ID dari path di author.id
@@ -30,7 +28,6 @@ const getAuthorOfPost = computed(() => {
   });
 });
 
-console.log("Author of Post:", getAuthorOfPost.value);
 
 //format date
 const formattedDate = computed(() => {
