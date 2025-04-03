@@ -1,9 +1,5 @@
 <template>
   <UApp>
-    <LayoutsHeader />
-        <NuxtPage />
-      </template>
-    <LayoutsFooter />
+    <NuxtPage />
   </UApp>
 </template>
-
