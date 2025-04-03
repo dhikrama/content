@@ -1,9 +1,0 @@
-name = "boringan"
-type = "typescript"
-compatibility_date = "2025-04-02"
-
-[[ d1_databases ]]
-binding = "DB"
-database_name = "db_boringan"
-database_id = "54f325df-c95d-4282-9528-700763995921"
-migrations_dir = "migrations"
