@@ -1,14 +1,9 @@
 name = "boringan"
-type = "javascript"
+type = "typescript"
 compatibility_date = "2025-04-02"
-
-[site]
-bucket = "./.output/public"
-entry-point = "./.output/server"
 
 [[routes]]
   pattern = "https://www.boringan.com/*"
-  custom = "my-worker"
 
 [[ d1_databases ]]
 binding = "DB"
