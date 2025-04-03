@@ -13,20 +13,6 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/fonts',
   ],
-  routeRules: {
-    '/': { prerender: true },
-    '/blog/**': { prerender: true } // Bisa ditambahkan untuk halaman lain
-  },
-
-  vite: {
-    build: {
-      terserOptions: {
-        compress: {
-          drop_console: true // Hapus console.log
-        }
-      }
-    }
-  },
 
   app: {
     head: {
