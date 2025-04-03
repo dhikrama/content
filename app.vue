@@ -5,7 +5,7 @@
     <LayoutsHeader />
     <Suspense>
       <template #default>
-        <LazyNuxtPage />
+        <NuxtPage />
       </template>
       <template #fallback>
         <div class="text-center">Loading...</div>
