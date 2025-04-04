@@ -14,49 +14,49 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
   ],
 
-  // app: {
-  //   head: {
-  //     link: [
-  //       { rel: 'prefetch', href: '/nuxt/entry.js' } // Hanya unduh saat butuh
-  //     ]
-  //   }
-  // },
+  app: {
+    head: {
+      link: [
+        { rel: 'prefetch', href: '/nuxt/entry.js' } // Hanya unduh saat butuh
+      ]
+    }
+  },
 
 
-  // nitro:{
-  //   preset: 'cloudflare_pages',
-  //   prerender:{
-  //     crawlLinks: true,
-  //     routes:['/','/blog/**','/sitemap.xml']
-  //   }
-  // },
+  nitro:{
+    preset: 'cloudflare_pages',
+    prerender:{
+      crawlLinks: true,
+      routes:['/','/blog/**','/sitemap.xml']
+    }
+  },
   
 
-  // css: ['~/assets/css/main.css', '~/assets/css/global.css'],
+  css: ['~/assets/css/main.css', '~/assets/css/global.css'],
   
 
-  // content: {
+  content: {
 
-  //   database:{
-  //     type:'d1',
-  //     bindingName:'DB'
+    database:{
+      type:'d1',
+      bindingName:'DB'
 
-  //   },
+    },
 
-  //   build: {
+    build: {
 
-  //     markdown: {
-  //       highlight: {
-  //         theme: {
-  //           // Default theme (same as single string)
-  //           default: 'github-light',
-  //           // Theme used if `html.dark`
-  //           dark: 'github-dark',
-  //           // Theme used if `html.sepia`
-  //           sepia: 'monokai'
-  //         }
-  //       }
-  //     }
-  //   }
-  // },
+      markdown: {
+        highlight: {
+          theme: {
+            // Default theme (same as single string)
+            default: 'github-light',
+            // Theme used if `html.dark`
+            dark: 'github-dark',
+            // Theme used if `html.sepia`
+            sepia: 'monokai'
+          }
+        }
+      }
+    }
+  },
 })
