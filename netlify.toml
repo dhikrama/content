@@ -1,5 +1,4 @@
 [build]
-  publish = ".output/public" # Or "dist"
   command = "npm run build" # Or "yarn build"
 
 [[redirects]]
