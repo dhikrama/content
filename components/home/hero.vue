@@ -1,5 +1,5 @@
 <template>
-    <section class="relative bg-cover bg-center py-32bun dev" :style="{ backgroundImage: `url(${backgroundImage})` }">
+    <section class="relative bg-cover bg-center py-52" :style="{ backgroundImage: `url(${backgroundImage})` }">
       <div class="absolute inset-0 bg-black opacity-50"></div>
       <div class="container mx-auto px-4 relative z-10">
         <div class="text-center text-white">
